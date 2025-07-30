@@ -2,10 +2,6 @@ body {
   font-family: courier, sans-serif;
   background: #1c1c1c;
   color: #ffffff;
-  background-image: url('background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   margin: 0;
   padding: 0;
   display: flex;
