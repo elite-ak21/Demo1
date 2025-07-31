@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RPG Game Demo</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mysterious Adventure - Demo</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Optional: Nice font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="game-container">
-    <div id="dialogue-box">
-      <p id="character-name"></p>
-      <p id="dialogue-text"></p>
-    </div>
-    <div id="controls">
-      <button id="next-button">Next</button>
-      <button id="save-button">Save</button>
-      <button id="load-button">Load</button>
-    </div>
+    <header>
+      <h1>Mysterious Adventure</h1>
+    </header>
+
+    <main>
+      <section id="dialogue-box" role="dialog" aria-live="polite">
+        <p id="character-name" class="character-name"></p>
+        <p id="dialogue-text" class="dialogue-text"></p>
+      </section>
+
+      <section id="controls" class="button-group">
+        <button id="next-button">Next</button>
+        <button id="save-button">Save</button>
+        <button id="load-button">Load</button>
+      </section>
+    </main>
+
+    <footer>
+      <p class="credits">Credits: Elite-ak-21 &amp; Oneill</p>
+    </footer>
   </div>
 
   <script src="game.js"></script>
