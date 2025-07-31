@@ -1,8 +1,8 @@
 const story = [
-  { name: "Hero", text: "Where am I...? This place feels unfamiliar." },
-  { name: "Hero", text: "I must find out what's going on." },
+  { name: "Alex", text: "Where am I...? This place feels unfamiliar." },
+  { name: "Alex", text: "I must find out what's going on." },
   { name: "Mysterious Voice", text: "You have been chosen..." },
-  { name: "Hero", text: "Who's there?! Show yourself!" }
+  { name: "Alex", text: "Who's there?! Show yourself!" }
 ];
 
 let currentIndex = 0;
