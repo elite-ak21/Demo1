@@ -1,6 +1,6 @@
 body {
   font-family: courier, sans-serif;
-  background: #1c1c1c;
+  background-image: url="background.jpg";
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -8,16 +8,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
-
-#bgVideo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  z-index: -1;
 }
 
 #game-container {
