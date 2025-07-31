@@ -1,6 +1,6 @@
 body {
   font-family: courier, sans-serif;
-  background-image: url="background.jpg";
+  background-image: url("background.jpg");
   color: #ffffff;
   margin: 0;
   padding: 0;
