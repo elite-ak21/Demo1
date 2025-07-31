@@ -31,7 +31,12 @@ function showDialogue(index) {
 
 
 nextBtn.addEventListener("click", () => {
-  currentIndex++;
+  if (currentIndex >= story.length) {
+    // Reset for replay
+    currentIndex = 0;
+  } else {
+    currentIndex++;
+  }
   showDialogue(currentIndex);
 });
 
