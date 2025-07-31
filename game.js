@@ -15,24 +15,23 @@ const loadBtn = document.getElementById("load-button");
 
 function showDialogue(index) {
   if (index < story.length) {
-  nameEl.textContent = story[index].name;
-  textEl.textContent = story[index].text;
+    nameEl.textContent = story[index].name;
+    textEl.textContent = story[index].text;
 
-  // Restore button text if it was changed to Replay before
-  if (nextBtn.textContent !== "Next") {
-    nextBtn.textContent = "Next";
+    // If replay button was showing, reset it back to "Next"
+    if (nextBtn.textContent !== "Next") {
+      nextBtn.textContent = "Next";
+    }
+  } else {
+    nameEl.textContent = "";
+    textEl.textContent = "[End of Demo]";
+    nextBtn.textContent = "Replay";
   }
-} else {
-  nameEl.textContent = "";
-  textEl.textContent = "[End of Demo]";
-  nextBtn.textContent = "Replay";
 }
-  
-
 
 nextBtn.addEventListener("click", () => {
   if (currentIndex >= story.length) {
-    // Reset for replay
+    // Restart the story when Replay is clicked
     currentIndex = 0;
   } else {
     currentIndex++;
@@ -56,4 +55,5 @@ loadBtn.addEventListener("click", () => {
   }
 });
 
+// Initialize the first dialogue
 showDialogue(currentIndex);
